@@ -5,7 +5,7 @@ test("valid login", async ({ page }) => {
 
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-    await page.getByPlaceholder("Username").fill("Admin");
+    await page.locator(".username").fill("Admin");
     await page.getByPlaceholder("password").fill("admin123");
     await page.getByText(" Login ").first().click();
 
