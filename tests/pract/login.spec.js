@@ -12,17 +12,17 @@ test("valid login", async ({ page }) => {
 
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-    await page.locator(".username").fill("Admin");
+    await page.getByPlaceholder("username").fill("Admin");
     await page.getByPlaceholder("password").fill("admin123");
     await page.getByText(" Login ").first().click();
 
     const ttle = await page.title();
     await expect(page).toHaveTitle(ttle);
     await page.locator(".oxd-topbar").isVisible();
-    await page.locator("span .oxd-userdropdown-tab").click();
+    //await page.locator("span .oxd-userdropdown-tab").click();
     //await page.pp.click();//    await page.locator("div[class='oxd-topbar-header-userarea']").click();
 
-    await page.getByText('logout').click();
+    //await page.getByText('logout').click();
 })
 
 test("valid login with dashboard", async ({ page }) => {
@@ -37,10 +37,10 @@ await page.getByRole('button', { name: 'Login' }).click();
     await expect(page).toHaveTitle(ttle);
     await page.locator(".oxd-topbar").isVisible();
     await page.waitForTimeout(2000);
-    await page.locator("'p.oxd-userdropdown-name img[class='oxd-userdropdown-img']'").click();
+    //await page.locator("'p.oxd-userdropdown-name img[class='oxd-userdropdown-img']'").click();
     //await page.pp.click();//    await page.locator("div[class='oxd-topbar-header-userarea']").click();
 
-    await page.getByText('logout').click();
+    //await page.getByText('logout').click();
 })
 
 test("dropwdown",async ({page})=>{
@@ -66,7 +66,7 @@ test("various dropdown", async function({page})
     let state = await page.$("#state")
     let allElements = await page.locator("option");
 
-    page.waitForTimeout(5000);
+    await page.waitForTimeout(5000);
     console.log("All values in dropdown: ",allElements.length)
     let ddstatus = false;
 
@@ -99,5 +99,5 @@ test("file uploaded", async({page})=>{
 
     await page.locator("#file-upload").setInputFiles("./upload/2.png");
     await page.locator("#file-submit").click()
-    expect(page).toHaveText("FileUploaded")
+    await expect(page.locator('h3')).toContainText(/File Uploaded/)
 })

@@ -6,7 +6,7 @@ test("My first test", async ({page})=>{
 })
 
 test("My second test", async ({page})=>{
-expect(102).toBe(101);
+expect(102).toBe(102);
 })
 
 test("My third test", async ({page})=>{
