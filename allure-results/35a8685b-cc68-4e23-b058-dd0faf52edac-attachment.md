@@ -1,0 +1,51 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - img "logo"
+  - heading "Learn Automation Courses" [level=1]
+  - img "menu"
+  - text: Learn Automation Courses
+  - img "delete"
+  - link "Home":
+    - /url: /
+  - link "Practise":
+    - /url: /practise
+- img "Login"
+- heading "Sign In" [level=2]
+- textbox "Enter Email"
+- textbox "Enter Password"
+- button "Sign in"
+- link "New user? Signup":
+  - /url: /signup
+- heading "Connect with us" [level=2]
+- link:
+  - /url: https://youtube.com/MukeshOtwani
+  - img
+- link:
+  - /url: https://twitter.com/MukeshOtwani
+  - img
+- link:
+  - /url: https://www.linkedin.com/in/mukesh-otwani-93631b99/
+  - img
+- link:
+  - /url: https://www.facebook.com/groups/256655817858291
+  - img
+- link:
+  - /url: https://learn-automation/reddit
+  - img
+- heading "Learn Automation By Mukesh Otwani" [level=3]
+- heading "©2023 All rights reserved" [level=2]
+- link:
+  - /url: https://youtube.com/MukeshOtwani
+  - img
+- link:
+  - /url: https://twitter.com/MukeshOtwani
+  - img
+- link:
+  - /url: https://www.linkedin.com/in/mukesh-otwani-93631b99/
+  - img
+- link:
+  - /url: https://www.facebook.com/groups/256655817858291
+  - img
+```

@@ -1,4 +1,12 @@
-{
+[
+    {
+    "testwithdata":"validdata",
     "username":"admin@email.com",
     "password":"admin@123"
+},
+{
+    "testwithdata":"invaliddata",
+    "username":"adm@email.com",
+    "password":"adm@123"
 }
+]
