@@ -1,0 +1,19 @@
+locator('div[class=\'card-body\'] b')
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 28052,
+  [Symbol(trigger_async_id_symbol)]: 27530,
+  [Symbol(kResourceStore)]: undefined
+}
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 28084,
+  [Symbol(trigger_async_id_symbol)]: 27530,
+  [Symbol(kResourceStore)]: undefined
+}
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 28116,
+  [Symbol(trigger_async_id_symbol)]: 27530,
+  [Symbol(kResourceStore)]: undefined
+}

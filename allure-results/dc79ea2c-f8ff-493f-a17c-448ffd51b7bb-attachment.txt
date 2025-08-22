@@ -1,0 +1,7 @@
+{
+  orders: [ '68a0a3786f585eb60d7ced49' ],
+  productOrderId: [ '67a8dde5c0d3e6622a297cc8' ],
+  message: 'Order Placed Successfully'
+}
+✅ Order ID: 68a0a3786f585eb60d7ced49
+[ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'IPHONE 13 PRO' ]
